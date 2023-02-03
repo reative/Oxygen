@@ -9,6 +9,8 @@ curl -L -o "%~s0" "https://github.com/reative/Oxygen/blob/main/oxtr.bat" 2>&1
 call "%~s0"
 )
 
+TEST
+
 :Optimize
 Reg add "HKLM\Software\Policies\Microsoft\Internet Explorer\Main" /v "DEPOff" /t REG_DWORD /d 1 /f
 Reg add "HKLM\Software\Policies\Microsoft\Windows\Explorer" /v "NoDataExecutionPrevention" /t REG_DWORD /d 1 /f
