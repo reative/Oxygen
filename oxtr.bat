@@ -2,10 +2,10 @@
 set Version=1
 setlocal EnableDelayedExpansion
 
-curl -g -k -L -# -o "%tmp%\update.bat" "https://raw.githubusercontent.com/UnLovedCookie/EchoX/main/Files/lightVersion" 2>&1
+curl -g -k -L -# -o "%tmp%\update.bat" "https://raw.githubusercontent.com/reative/Oxygen/main/update"
 call "%tmp%\update.bat"
 if "%Version%" lss "!update!" (cls
-curl -L -o "%~s0" "https://github.com/reative/Oxygen/blob/main/oxtr.bat" 2>&1
+curl -L -o "%~s0" "https://github.com/reative/Oxygen/blob/main/oxtr.bat"
 call "%~s0"
 )
 
