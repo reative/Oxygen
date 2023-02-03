@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 curl -g -k -L -# -o "%tmp%\update.bat" "https://raw.githubusercontent.com/UnLovedCookie/EchoX/main/Files/lightVersion" 2>&1
 call "%tmp%\update.bat"
 if "%Version%" lss "!update!" (cls
-curl -L -o "%~s0" "https://github.com/UnLovedCookie/EchoX/releases/latest/download/EchoXLight.bat" 2>&1
+curl -L -o "%~s0" "https://github.com/reative/Oxygen/blob/main/oxtr.bat" 2>&1
 call "%~s0"
 )
 
