@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 curl -g -k -L -# -o "%tmp%\latestVersion.bat" "https://raw.githubusercontent.com/reative/Oxygen/main/update"
 call "%tmp%\latestVersion.bat"
 if "%Version%" lss "!latestVersion!" (cls
-curl -L -o "%~s0" "https://github.com/UnLovedCookie/EchoX/releases/latest/download/EchoXLight.bat"
+curl -L -o "%~s0" "https://github.com/reative/Oxygen/releases/latest/download/oxtr.bat"
 call "%~s0"
 )
 
